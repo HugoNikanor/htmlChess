@@ -1,0 +1,82 @@
+#chess {
+	overflow: auto;
+	margin: auto;
+}
+
+#board {
+	min-width  : 460px;
+	min-height : 460px;
+	max-width  : 460px;
+	max-height : 460px;
+	float: left;
+	background-image: url(http://img11.deviantart.net/efea/i/2006/240/7/a/bg_texture___wood_by_nortago.jpg);
+/*http://img11.deviantart.net/efea/i/2006/240/7/a/bg_texture___wood_by_nortago.jpg*/
+	border: 1px solid black;
+}
+
+#move-log {
+	border: 1px solid black;
+	width: 50px;
+	height: 460px;
+	max-height: 460px;
+	overflow-y: scroll;
+	float: left;
+	border-left: 0px;
+}
+
+.black, .white {
+	/* the spaces on the board */
+	min-width: 50px;
+	min-height: 50px;
+	max-width: 50px;
+	max-height: 50px;
+	float: left;
+	font-size: 45px;
+	text-align: center;
+}
+
+.white {
+	background-color: white;
+}
+.black {
+	background-color: black;
+}
+
+.black-piece, .white-piece {
+	pointer-events: none !important;
+	opacity: 0.8;
+}	
+
+.black-piece {
+	color: DarkRed;
+}
+.white-piece {
+	color: Grey;
+}
+
+.top-letter, .side-number, .corner-space {
+	float: left;
+	text-align: center;
+	font-size: 25px;
+	color: BurlyWood;
+}
+
+.top-letter {
+	min-width  : 50px;
+	min-height : 30px;
+	max-width  : 50px;
+	max-height : 30px;
+}
+.corner-space {
+	min-width  : 30px;
+	min-height : 30px;
+	max-width  : 30px;
+	max-height : 30px;
+}
+.side-number {
+	min-width  : 30px;
+	min-height : 50px;
+	max-width  : 30px;
+	max-height : 50px;
+}
+
